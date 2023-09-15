@@ -32,14 +32,14 @@ const Section: React.FC<SectionProps> = ({
   if (!section.visible) return null;
 
   if (isArray(section.items) && isEmpty(section.items)) return null;
-
+  // ${section.columns}
   return (
     <section id={`Castform_${sectionId}`}>
       <Heading>{section.name}</Heading>
 
       <div
         className={clsx('grid items-start gap-4', { invert: isSidebarSection })}
-        style={{ gridTemplateColumns: `repeat(${section.columns}, minmax(0, 1fr))` }}
+        style={{ gridTemplateColumns: `repeat(1, minmax(0, 1fr))` }}
       >
         {section.items.map((item: ListItem) => {
           const id = item.id,

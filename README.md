@@ -14,13 +14,14 @@ postgres=# CREATE USER postgres;
 postgres=# ALTER DATABASE postgres OWNER TO postgres;
 ```
 3. Follow the steps at https://docs.rxresu.me/source-code/local-build
+4. Add values for `SECRET_KEY` and `JWT_SECRET` in your `.env` file
 
-
-
-
-
-
-
+5. Build and start server:
+```bash
+pnpm build
+pnpm start
+```
+6. Navigate to http://localhost:3000/
 
 
 
