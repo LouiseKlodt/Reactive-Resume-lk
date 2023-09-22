@@ -37,7 +37,7 @@ const Section: React.FC<SectionProps> = ({
 
       <div
         className="grid items-start gap-4"
-        style={{ gridTemplateColumns: `repeat(${section.columns}, minmax(0, 1fr))` }}
+        style={{ gridTemplateColumns: `repeat(1, minmax(0, 1fr))` }}
       >
         {section.items.map((item: ListItem) => {
           const id = item.id,
